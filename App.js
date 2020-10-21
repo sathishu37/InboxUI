@@ -41,11 +41,11 @@ class App extends Component {
     return(
       <View style = {styles.searchBarView}>
         <TouchableOpacity>
-          <Image source = {require('./uncheck.png')} style = {styles.filterIcons}/>
+          <Image source = {require('./Images/uncheck.png')} style = {styles.filterIcons}/>
         </TouchableOpacity>
         <View style = {styles.searchBox}>
           <TouchableOpacity>
-            <Image source = {require('./search.png')} style = {styles.searchIcons}/>
+            <Image source = {require('./Images/search.png')} style = {styles.searchIcons}/>
           </TouchableOpacity>        
           <TextInput
             value = {this.state.searchvalue}
@@ -53,11 +53,11 @@ class App extends Component {
             style = {{width:'75%'}}
           />
           <TouchableOpacity>
-            <Image source = {require('./cancel.png')} style = {styles.searchIcons}/>
+            <Image source = {require('./Images/cancel.png')} style = {styles.searchIcons}/>
           </TouchableOpacity>          
         </View>
         <TouchableOpacity>
-          <Image source = {require('./filter.png')} style = {styles.menubar}/>
+          <Image source = {require('./Images/filter.png')} style = {styles.menubar}/>
         </TouchableOpacity>                
       </View>
     )
@@ -68,11 +68,11 @@ class App extends Component {
     return(
       <View style = {styles.messageContainer}>
         <TouchableOpacity>
-          <Image source = {require('./uncheck.png')} style = {styles.filterIcons}/>
+          <Image source = {require('./Images/uncheck.png')} style = {styles.filterIcons}/>
         </TouchableOpacity>
         <View style = {styles.messageView}>
           <TouchableOpacity>
-            <Image source = {require('./avatar.png')} style = {styles.avatar}/>
+            <Image source = {require('./Images/avatar.png')} style = {styles.avatar}/>
           </TouchableOpacity>
           <View style = {{paddingLeft:10}}>
             <Text style = {styles.name}>{item.name}</Text>
@@ -84,7 +84,7 @@ class App extends Component {
           <Text style = {{fontSize:12,color:"#4d4d63",marginTop:2}}>{item.time}</Text>
         </View>
         <TouchableOpacity>
-          <Image source = {require('./right-arrow.png')} style = {styles.filterIcons}/>
+          <Image source = {require('./Images/right-arrow.png')} style = {styles.filterIcons}/>
         </TouchableOpacity>                                
       </View>
     )
@@ -100,11 +100,11 @@ class App extends Component {
         <StatusBar backgroundColor = "#e3e9e7" barStyle = "dark-content"/>
         <View style = {styles.header}>
           <TouchableOpacity>
-            <Image source = {require('./menu.png')} style = {styles.menubar}/>
+            <Image source = {require('./Images/menu.png')} style = {styles.menubar}/>
           </TouchableOpacity>
           <Text style = {styles.headerText}>INBOX</Text>
           <TouchableOpacity>
-            <Image source = {require('./avatar.png')} style = {styles.avatar}/>
+            <Image source = {require('./Images/avatar.png')} style = {styles.avatar}/>
           </TouchableOpacity>           
         </View>
         {this.searchBar()}
@@ -116,7 +116,7 @@ class App extends Component {
           ItemSeparatorComponent = {this.divider}
         />
         <TouchableOpacity style={styles.newMessageButton}>
-          <Image source = {require('./speech-bubble.png')} style = {{width:50,height:50}}/>
+          <Image source = {require('./Images/speech-bubble.png')} style = {{width:50,height:50}}/>
         </TouchableOpacity>        
       </View>
     );
